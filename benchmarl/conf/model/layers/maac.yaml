@@ -1,0 +1,6 @@
+
+name: maac
+
+embedding_dim: 64
+num_heads: 4
+share_params: False

@@ -17,6 +17,9 @@ from .gnn import Gnn, GnnConfig
 from .gru import Gru, GruConfig
 from .lstm import Lstm, LstmConfig
 from .mlp import Mlp, MlpConfig
+from .moe import MoE, MoEConfig
+from .maac import Maac, MaacModelConfig
+from .mapoca import MAPOCA, MAPOCAModelConfig
 
 classes = [
     "Mlp",
@@ -31,6 +34,13 @@ classes = [
     "GruConfig",
     "Lstm",
     "LstmConfig",
+    
+    
+    "MoE_Deepsets",
+    "MoEConfig",
+    "MaacModelConfig",
+    "MAPOCA",
+    "MAPOCAModelConfig",
 ]
 
 model_config_registry = {
@@ -40,4 +50,9 @@ model_config_registry = {
     "deepsets": DeepsetsConfig,
     "gru": GruConfig,
     "lstm": LstmConfig,
+    
+    
+    "moe":MoEConfig,
+    "maac":MaacModelConfig,
+    "mapoca":MAPOCAModelConfig,
 }
